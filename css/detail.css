@@ -1,0 +1,132 @@
+@font-face {
+    font-family: retron2000;
+    src: url(../fonts/fonts/Retron2000.otf) format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: ahamono;
+    src: url(../fonts/TUV-Ahamono/TUV-Ahamono.otf);
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    font-family: retron2000;
+}
+.navbar {
+    box-shadow: 1px 2px 3px rgba(132, 132, 132, 0.854);
+    height: 70px;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    transition: transform .2s linear;
+    background-color: #2E4F4F;
+}
+.left .nav-link{
+    color: white;
+    margin-top: 5px;
+}
+.right .nav-link{
+    color: white;
+    margin-bottom: 10px;
+}
+h2{
+    color: aliceblue;
+    padding-left: 0px;
+}
+#logo{
+    margin: 0px 10px 0px 10px;
+}
+.breadcrumb{
+    background-image: url(../resource/background.png);
+}
+.breadcrumb li{
+    padding-left: 185px;
+}
+.breadcrumb-item a{
+    color: black;
+}
+.breadcrumb {
+    background-color: #2E4F4F;
+}
+#content{
+    background-image: url(../resource/background.png);
+    padding-bottom: 80px;
+}
+body {
+    text-align: center;
+    .breadcrumb-item+.breadcrumb-item::before {
+      content: ">";
+    }
+}
+.name-game-rating{
+    padding-top: 40px;
+}
+.ratings i{
+    float: left;
+}
+.ratings {
+    padding-top: 10px !important;
+}
+.rating-color{
+    color:#0E8388 !important;
+    font-size: 24px;
+}
+.rating-uncolor{
+    color: #CBE4DE;
+    font-size: 24px;
+}
+
+h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+#servicemenu li{
+    line-height: 55px;
+    font-size: 11px;
+    margin: 5px 10px;
+    color: rgb(63, 63, 63);
+}
+
+#servicemenu a {
+    color: aliceblue;
+}
+
+#servicemenu{
+    margin-left: 220px;
+}
+
+#socialmenu li{
+    line-height: 55px;
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+#socialmenu{
+    margin-left: 340px;
+}
+
+.footer-mid{
+    margin: 20px 50px 20px 220px;
+}
+
+.footer .footer-top .footer-links-container .footer-links {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.footer-links h2{
+    font-weight: bold;
+}
+.footer-links a{
+    color: black;
+    font-size: 13px;
+}

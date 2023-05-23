@@ -1,0 +1,19 @@
+<?php
+// Kết nối đến cơ sở dữ liệu
+include('connect.php');
+$connect = new connect();
+
+// Truy vấn cơ sở dữ liệu để lấy danh sách các danh mục
+$sql = "SELECT * FROM tbl_category";
+$result = mysqli_query($conn, $sql);
+
+// Tạo một mảng chứa các danh mục
+$categories = array();
+while($row = mysqli_fetch_assoc($result)) {
+    $categories[] = $row;
+}
+
+// Mã hóa mảng danh mục dưới dạng JSON và gửi về cho phía máy khách
+header("Content-Type: application/json");
+echo json_encode($categories);
+?>
